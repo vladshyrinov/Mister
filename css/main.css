@@ -1,0 +1,117 @@
+/* COMMON SETTINGS */
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+	font-size: 16px;
+}
+
+body {
+	width: 98%;
+	background: #f2f2f2;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #222222;
+}
+
+a:hover {
+	color: #222222;
+}
+
+/************************LOGO**************************/
+
+.logo {
+	display: block;
+	width: 100%;
+	position: absolute;
+	text-align: center;
+	z-index: 10;
+	text-transform: uppercase;
+}
+
+.logo a:hover {
+	text-decoration: none;
+}
+
+.black,
+.white {
+	position: relative;
+	top: 20px;
+	right: 54px;
+	font-size: 39px;
+	color: #000;
+}
+
+@media screen and (max-width: 767px) {
+	.white,
+	.black {
+		color: #000;
+		right: 0;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.white {
+		color: #fff;
+	}
+}
+
+/**********************MENU - PART***********************/
+
+.menu_part {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 99vh;
+}
+
+/* MENU */
+
+.menu li {
+	margin-top: 25px;
+	display: block;
+	text-transform: uppercase;
+}
+
+.menu a {
+	display: block;
+}
+
+/* ABOUT */
+
+.about {
+	position: absolute;
+	bottom: 40px;
+}
+
+.about li {
+	display: inline-block;
+	font-size: 12px;
+}
+
+/**************************POSTER - PART***************/
+
+.poster_part {
+	height: 99vh;
+	background: url('../img/poster.jpg') no-repeat;
+	background-size: cover;
+}
+
+@media screen and (max-width: 767px) {
+	body {
+		width: 99%;
+	}
+	.poster_part,
+	.menu_part {
+		width: 100%;
+	}
+}
