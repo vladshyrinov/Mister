@@ -66,6 +66,7 @@ a:hover {
 /**********************MENU - PART***********************/
 
 .menu_part {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -108,7 +109,7 @@ a:hover {
 
 @media screen and (max-width: 767px) {
 	body {
-		width: 99%;
+		width: 95%;
 	}
 	.poster_part,
 	.menu_part {
