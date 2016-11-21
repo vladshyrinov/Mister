@@ -12,6 +12,7 @@ body {
 	background: #f2f2f2;
 }
 
+
 li {
 	list-style: none;
 }
@@ -90,8 +91,8 @@ a:hover {
 /* ABOUT */
 
 .about {
-	position: absolute;
-	bottom: 40px;
+	position: relative;
+	bottom: -160px;
 }
 
 .about li {
@@ -109,7 +110,7 @@ a:hover {
 
 @media screen and (max-width: 767px) {
 	body {
-		width: 95%;
+		width: 96vw;
 	}
 	.poster_part,
 	.menu_part {
