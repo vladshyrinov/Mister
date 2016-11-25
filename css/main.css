@@ -92,7 +92,7 @@ a:hover {
 
 .about {
 	position: relative;
-	bottom: -160px;
+	top: 100px;
 }
 
 .about li {

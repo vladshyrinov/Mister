@@ -11,6 +11,56 @@
 	<script src="js/misters.js"></script>
 </head>
 <body>
-	
-</body>
-</html>
+	<div class="modal">
+		<p>Оберіть соціальну мережу
+			<br> за допомогою якої ви бажаєте проголосувати</p>
+			<div class="social-networks netw_elect">
+				<ul>
+					<li><a class="soc-link vk" href="#" target="_blank"></a></li>
+					<li><a class="soc-link facebook" href="#" target="_blank"></a></li>
+					<li><a class="soc-link instagram" href="#" target="_blank"></a></li>
+				</ul>
+			</div>
+			<p>*голосувати можна один раз за одного кандидата</p>
+		</div>
+		<div class="overlay"></div>
+		<script type="text/template" id="root">
+			<div class="back">
+				<a href="#"></a>
+				<p>Назад</p>
+			</div>
+			<nav class="menu">
+				<ul class="participants">
+					<li><a href="#fbmi">ФБМІ</a></li>
+					<li><a href="#fel">ФЕЛ</a></li>
+					<li><a href="#faks">ФАКС</a></li>
+				</ul>
+			</nav>
+			<div class="show_line"></div>
+			<div class="wrapper_misterLink"><h1 class="misterLink"><a href="#">MISTER <span>KPI</span></a></h1>
+			</div>
+			<% for(var i=0; i<name.length; i++) { %>
+				<div id="<%=id[i].name%>" class="row">
+					<div class="col-sm-6 photo_part">
+						<img src="img/<%=photo1[i].name%>" alt="mister1_1">
+					</div>
+					<div class="col-sm-6 info_part">
+						<img src="img/<%=photo2[i].name%>" alt="mister1_2">
+						<h2><%=name[i].name%>(<%=faculty[i].name%>)</h2>
+						<p><%=text[i].name%></p>
+						<div class="vote">
+							<div class="social-networks">
+								<ul>
+									<li><a class="soc-link vk" href="<%=vk[i].name%>" target="_blank"></a></li>
+									<li><a class="soc-link facebook" href="<%=fb[i].name%>" target="_blank"></a></li>
+									<li><a class="soc-link instagram" href="<%=inst[i].name%>" target="_blank"></a></li>
+								</ul>
+							</div>
+							<button class="election">голосувати</button>
+						</div>
+					</div>
+				</div>
+				<%}%>
+			</script>
+		</body>
+		</html>
