@@ -71,25 +71,54 @@ a:hover {
 
 .show_line {
 	position: fixed;
-	top: 180px;
+	top: 0;
 	background: #909090;
-	height: 300px;
-	width: 10px;
+	height: 15px;
+	width: 100%;
+	z-index:100;
+	cursor: pointer;
+}
+
+.show_line img {
+	position: absolute;
+	top: -2px;
+	left: 47%;
+	width: 20px;
+	height: 20px;
 }
 
 .menu {
+	display: flex;
+	justify-content: center;
 	position: fixed;
-	top: 180px;
+	top: 0;
 	background: #909090;
-	height: 300px;
-	width: 100px;
-	left: -1000px;
-	padding: 10px;
-	z-index: 30;
+	height: 60px;
+	width: 100%;
+	top: -1000px;
+	z-index: 101;
+}
+
+.menu li {
+	display: inline-block;
+	border-right: 1px solid #fff;
+}
+
+.menu li:first-child {
+	border-left: 1px solid #fff;
 }
 
 .menu a{
+	display: block;
+	height: 60px;
+	width: 100px;
 	color: #fff;
+	text-align: center;
+	line-height: 60px;
+}
+
+.menu a:hover {
+	color:#000;
 }
 
 @media(max-width: 500px) {

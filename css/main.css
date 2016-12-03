@@ -105,7 +105,7 @@ a:hover {
 .poster_part {
 	height: 99vh;
 	background: url('../img/poster.jpg') no-repeat;
-	background-size: cover;
+	background-size: 100% 100%;
 }
 
 @media screen and (max-width: 767px) {

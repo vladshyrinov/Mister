@@ -82,10 +82,19 @@ $(function(){
             $('.show_line,.menu').click(function(){
                 var hidden = $('.menu');
                 if (hidden.hasClass('visible')){
-                    hidden.animate({"left":"-1000px"}, "slow").removeClass('visible');
+                    hidden.animate({"top":"-1000px"}, "slow").removeClass('visible');
                 } else {
-                    hidden.animate({"left":"0px"}, "slow").addClass('visible');
+                    hidden.animate({"top":"0px"}, "slow").addClass('visible');
                 }
+
+                $('a[href*=#]').bind("click", function(e){
+                    var anchor = $(this);
+                    $('html, body').stop().animate({
+                        scrollTop: $(anchor.attr('href')).offset().top
+                    }, 1000);
+                    e.preventDefault();
+                });
+
 
             });
         });
