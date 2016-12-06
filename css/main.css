@@ -1,9 +1,18 @@
+@font-face {
+    font-family: 'MyriadPro';
+    src: url('../fonts/MyriadPro-Regular.eot');
+    src: url('../fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/MyriadPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* COMMON SETTINGS */
 
 * {
 	padding: 0;
 	margin: 0;
-	font-family: sans-serif;
+	font-family: 'MyriadPro', sans-serif;
 	font-size: 16px;
 }
 
@@ -30,11 +39,13 @@ a:hover {
 
 .logo {
 	display: block;
+	position: relative;
 	width: 100%;
 	position: absolute;
 	text-align: center;
 	z-index: 10;
 	text-transform: uppercase;
+	left: 10px;
 }
 
 .logo a:hover {
@@ -92,7 +103,7 @@ a:hover {
 
 .about {
 	position: relative;
-	top: 100px;
+	top: 180px;
 }
 
 .about li {
@@ -104,7 +115,7 @@ a:hover {
 
 .poster_part {
 	height: 99vh;
-	background: url('../img/poster.jpg') no-repeat;
+	background: url('../img/poster0.jpg') no-repeat;
 	background-size: 100% 100%;
 }
 

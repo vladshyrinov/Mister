@@ -86,15 +86,14 @@ $(function(){
                 } else {
                     hidden.animate({"top":"0px"}, "slow").addClass('visible');
                 }
-
-                $('a[href*=#]').bind("click", function(e){
-                    var anchor = $(this);
-                    $('html, body').stop().animate({
-                        scrollTop: $(anchor.attr('href')).offset().top
-                    }, 1000);
-                    e.preventDefault();
-                });
-
-
             });
+            $(document).bind( 'mousewheel', function (e) { 
+                var nt = $(document.body).scrollTop()-(e.originalEvent.wheelDeltaY*3.3); 
+                e.preventDefault(); 
+
+                $(document.body).stop().animate( { 
+                    scrollTop : nt 
+                } , 1000); 
+            } );
+
         });
