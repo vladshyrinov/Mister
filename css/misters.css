@@ -1,10 +1,10 @@
 @font-face {
-    font-family: 'MyriadPro';
-    src: url('../fonts/MyriadPro-Regular.eot');
-    src: url('../fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/MyriadPro-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'MyriadPro';
+	src: url('../fonts/MyriadPro-Regular.eot');
+	src: url('../fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/MyriadPro-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
 }
 
 * {
@@ -53,8 +53,8 @@ a:hover {
 	position: fixed;
 	left: 2vw;
 	top: 7vw;
-	width: 5vw;
-	height: 6vw;
+	width: 100px;
+	height: 15px;
 	z-index: 20;
 }
 
@@ -102,10 +102,12 @@ a:hover {
 	position: fixed;
 	top: 0;
 	background: #909090;
-	height: 60px;
+	height: 55px;
 	width: 100%;
 	top: -1000px;
 	z-index: 101;
+	text-align: center;
+	padding: 0 120px;
 }
 
 .menu li {
@@ -117,13 +119,17 @@ a:hover {
 	border-left: 1px solid #fff;
 }
 
+.menu li:last-child {
+	border-right: none;
+}
+
 .menu a{
 	display: block;
-	height: 60px;
+	height: 16px;
 	width: 100px;
 	color: #fff;
 	text-align: center;
-	line-height: 60px;
+	line-height: 16px;
 }
 
 .menu a:hover {
@@ -141,10 +147,14 @@ a:hover {
 		display: block;
 		width: 100vw;
 		border: none;
-		border-left: none;
 		border-bottom: 1px solid #fff;
 	}
+	.menu li:first-child {
+		border-left: none;
+	}
 	.menu a {
+		height: 25px;
+		line-height: 25px;
 		width: 100%;
 	}
 }
