@@ -65,7 +65,7 @@ overlay.on("click", function () {
 $('.show_line,.menu').click(function(){
     var hidden = $('.menu');
     if (hidden.hasClass('visible')){
-        hidden.animate({"top":"-1000px"}, "slow").removeClass('visible');
+        hidden.animate({"top":"-3000px"}, "slow").removeClass('visible');
     } else {
         hidden.animate({"top":"0px"}, "slow").addClass('visible');
     }
