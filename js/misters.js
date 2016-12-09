@@ -22,9 +22,7 @@ $(function(){
         }
     });
 
-
-    $(document).ready(function(){
-        $(".menu").on("click","a", function (event) {
+    $(".menu").on("click","a", function (event) {
         //отменяем стандартную обработку нажатия по ссылке
         event.preventDefault();
 
@@ -36,7 +34,7 @@ $(function(){
         
         //анимируем переход на расстояние - top за 1500 мс
         $('body,html').animate({scrollTop: top}, 1500);
-    });
+
     });
 
 
