@@ -25,7 +25,8 @@ body {
 }
 
 h2 {
-	font-size: 28px;
+	font-size: 32px;
+
 }
 
 li {
@@ -174,274 +175,278 @@ a:hover {
 	}
 }
 
-	/***********************MISTER KPI INSCRIPTION**********************/
+/***********************MISTER KPI INSCRIPTION**********************/
 
-	.wrapper_misterLink {
-		position: fixed;
-		height: 70px;
-		width: 100%;
-		background: #f2f2f2;
-		z-index: 15;
+.wrapper_misterLink {
+	position: fixed;
+	height: 70px;
+	width: 100%;
+	background: #f2f2f2;
+	z-index: 15;
+}
+
+.misterLink {
+	position: fixed;
+	left: 38%;
+	font-size: 39px;
+	color: #000;
+}
+
+.misterLink a {
+	font-size: 39px;
+}
+
+.misterLink span {
+	color: #b7b6b6;
+	font-size: 39px;
+}
+
+
+/*************************PHOTO-PART**********************************/
+
+.photo_part {
+	display: flex;
+	justify-content: center;
+	padding-top: 80px;
+	height: 100%;
+}
+
+.photo_part img{
+	width: 28vw;
+	height: 40vw;
+}
+
+
+
+/*************************INFO-PART**********************************/
+
+.vote {
+	margin-top: 100px;
+}
+.info_part {
+	padding-top: 80px;
+	height: 100%;
+	padding-right: 30px;
+}
+
+.info_part img {
+	display: block;
+	position: relative;
+	top: 0;
+	left: -30px;
+	width: 35vw;
+}
+
+.info_part h2 {
+	position: relative;
+	top: 20px;
+	left: -30px;
+}
+
+.info_part p {
+	margin-top: 60px;
+	position: relative;
+	top: 0;
+	left: -30px;
+	text-align: justify;
+}
+
+button {
+	display: block;
+	margin-top: 10px;
+	text-transform: uppercase;
+	border: 1px solid #333;
+	padding: 8px 30px;
+	border-radius: 3px;
+	margin-left: -30px;
+}
+
+button:hover {
+	background: #333;
+	color: #f2f2f2;
+}
+
+.social-networks {
+	margin-top: 10px;
+	margin-left: -30px;
+}
+
+.social-networks li {
+	display: inline-block;
+	margin-right: 3px;
+}
+
+.social-networks a {
+	display: block;
+	width: 43px;
+	height: 44px;
+	background: url('../img/sprite.png') no-repeat;
+}
+
+.social-networks .facebook {
+	background-position: -46px 0;
+}
+
+.social-networks .instagram {
+	background-position: -92px 0;
+}
+
+.social-networks .vk:hover {
+	background-position: 0 -51px;
+}
+
+.social-networks .facebook:hover {
+	background-position: -46px -51px;
+}
+
+.social-networks .instagram:hover {
+	background-position: -92px -51px;
+}
+
+@media screen and (max-width: 767px) {
+	.back {
+		width: 8vw;
+		height: 10vw;
 	}
-
+	.back p {
+		font-size: 3vw;
+	}
 	.misterLink {
-		position: fixed;
-		left: 38%;
-		font-size: 39px;
-		color: #000;
+		left: 36%;
 	}
-
-	.misterLink a {
-		font-size: 39px;
-	}
-
-	.misterLink span {
-		color: #b7b6b6;
-		font-size: 39px;
-	}
-
-
-	/*************************PHOTO-PART**********************************/
-
 	.photo_part {
-		display: flex;
-		justify-content: center;
-		padding-top: 80px;
-		height: 100%;
+		display: none;
 	}
-
-	.photo_part img{
-		width: 28vw;
-		height: 40vw;
-	}
-
-
-
-	/*************************INFO-PART**********************************/
-
 	.info_part {
-		padding-top: 80px;
-		height: 100%;
-		padding-right: 30px;
+		position: relative;
+		padding-left: 10vw;
+		padding-right: 0;
 	}
-
 	.info_part img {
-		display: block;
-		position: relative;
-		top: 0;
-		left: -30px;
-		width: 35vw;
+		width: 70vw;
 	}
-
-	.info_part h2 {
-		position: relative;
-		top: 20px;
-		left: -30px;
-	}
-
-	.info_part p {
-		margin-top: 60px;
-		position: relative;
-		top: 0;
-		left: -30px;
-		text-align: justify;
-	}
-
-	button {
-		display: block;
-		margin-top: 10px;
-		text-transform: uppercase;
-		border: 1px solid #333;
-		padding: 8px 30px;
-		border-radius: 3px;
-		margin-left: -30px;
-	}
-
-	button:hover {
-		background: #333;
-		color: #f2f2f2;
-	}
-
-	.social-networks {
-		margin-top: 10px;
-		margin-left: -30px;
-	}
-
-	.social-networks li {
-		display: inline-block;
-		margin-right: 3px;
-	}
-
-	.social-networks a {
-		display: block;
-		width: 43px;
-		height: 44px;
-		background: url('../img/sprite.png') no-repeat;
-	}
-
-	.social-networks .facebook {
-		background-position: -46px 0;
-	}
-
-	.social-networks .instagram {
-		background-position: -92px 0;
-	}
-
-	.social-networks .vk:hover {
-		background-position: 0 -51px;
-	}
-
-	.social-networks .facebook:hover {
-		background-position: -46px -51px;
-	}
-
-	.social-networks .instagram:hover {
-		background-position: -92px -51px;
-	}
-
-	@media screen and (max-width: 767px) {
-		.back {
-			width: 8vw;
-			height: 10vw;
-		}
-		.back p {
-			font-size: 3vw;
-		}
-		.misterLink {
-			left: 36%;
-		}
-		.photo_part {
-			display: none;
-		}
-		.info_part {
-			padding-left: 10vw;
-			padding-right: 0;
-		}
-		.info_part img {
-			width: 70vw;
-		}
-		.vote {
-			width: 100%;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-		}
-	}
-
-	@media screen and (max-width: 580px) { 
-		.misterLink {
-			left: 30%;
-		}
-	}
-
-
-	@media screen and (max-width: 450px) {
-		.misterLink {
-			left: 27%;
-		}
-		.info_part {
-			padding-left: 15vw;
-		}
-	}
-
-	@media screen and (max-width: 390px) { 
-		.misterLink {
-			left: 21%;
-		}
-	}
-
-	@media screen and (max-width: 350px) { 
-		.misterLink {
-			left: 17%;
-		}
-	}
-
-
-	/***************************BUTTON REACTION TO ELECT*************************/
-
-	@keyframes showoverlay {
-		0% {
-			background: rgba(0,0,0,0);
-		}
-		30% {
-			background: rgba(0,0,0,0.1);
-		}
-		66% {
-			background: rgba(0,0,0,0.2);
-		}
-		100% {
-			background: rgba(0,0,0,0.4);
-		}
-	}
-
-	.overlay {
-		display: none;
-	}
-
-	.overlay_show {
-		display: block;
-		position: fixed;
-		top: 0;
-		left: 0;
-		z-index: 100;
+	.vote {
 		width: 100%;
-		height: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+@media screen and (max-width: 580px) { 
+	.misterLink {
+		left: 30%;
+	}
+}
+
+
+@media screen and (max-width: 450px) {
+	.misterLink {
+		left: 27%;
+	}
+	.info_part {
+		padding-left: 15vw;
+	}
+}
+
+@media screen and (max-width: 390px) { 
+	.misterLink {
+		left: 21%;
+	}
+}
+
+@media screen and (max-width: 350px) { 
+	.misterLink {
+		left: 17%;
+	}
+}
+
+
+/***************************BUTTON REACTION TO ELECT*************************/
+
+@keyframes showoverlay {
+	0% {
+		background: rgba(0,0,0,0);
+	}
+	30% {
+		background: rgba(0,0,0,0.1);
+	}
+	66% {
+		background: rgba(0,0,0,0.2);
+	}
+	100% {
 		background: rgba(0,0,0,0.4);
-		animation: showoverlay 0.5s linear;
 	}
+}
 
-	@keyframes modalShow {
-		0% {
-			background: rgba(242,242,242,0);
-		}
-		30% {
-			background: rgba(242,242,242,0.2);
-		}
-		66% {
-			background: rgba(242,242,242,0.5);
-		}
-		100% {
-			background: rgba(242,242,242,0.8);
-		}
-	}
+.overlay {
+	display: none;
+}
 
-	.modal {
-		display: none;
+.overlay_show {
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.4);
+	animation: showoverlay 0.5s linear;
+}
+
+@keyframes modalShow {
+	0% {
+		background: rgba(242,242,242,0);
 	}
-	.modal_show {
-		position: fixed;
-		display: block;
-		height: 20vw;
-		width: 30vw;
-		text-align: center;
-		left: 50%;
-		top: 50%;
-		margin: -10vw 0 0 -15vw;
+	30% {
+		background: rgba(242,242,242,0.2);
+	}
+	66% {
+		background: rgba(242,242,242,0.5);
+	}
+	100% {
 		background: rgba(242,242,242,0.8);
-		box-shadow: 0 3px 20px rgba(0,0,0,0.9);
-		padding: 10px;
-		border-radius: 10px;
-		z-index: 101;
-		animation: modalShow 0.5s linear;
 	}
+}
 
-	.netw_elect {
-		margin: 0;
-		margin-top: 10px;
-		margin-bottom: 10px;
-	}
+.modal {
+	display: none;
+}
+.modal_show {
+	position: fixed;
+	display: block;
+	height: 20vw;
+	width: 30vw;
+	text-align: center;
+	left: 50%;
+	top: 50%;
+	margin: -10vw 0 0 -15vw;
+	background: rgba(242,242,242,0.8);
+	box-shadow: 0 3px 20px rgba(0,0,0,0.9);
+	padding: 10px;
+	border-radius: 10px;
+	z-index: 101;
+	animation: modalShow 0.5s linear;
+}
 
-	/***************************XIAOMI***********************/
+.netw_elect {
+	margin: 0;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
 
-	.xiaomi {
-		display: block;
-		position: absolute;
-		bottom: 0;
-		right: 3vw;
-		z-index: 14;
-	}
+/***************************XIAOMI***********************/
 
-	.xiaomi img {
-		width: 7vw;
-		height: 8vw;
-	}
+.xiaomi {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 14;
+}
+
+.xiaomi img {
+	width: 7vw;
+	height: 8vw;
+}

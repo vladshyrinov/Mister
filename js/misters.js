@@ -1,74 +1,43 @@
 $(function(){
 
-  var html = $('#root').html();
-  
-  var data = {
-    name : [
-    {name:"Іван Іванов"},
-    {name:"Петро Петров"},
-    {name:"Алина, Просто Алина"}
-    ],
-    faculty : [
-    {name:"ФБМІ"},
-    {name:"ФЕЛ"},
-    {name:"ФАКС"},
-    ],
-    id : [
-    {name:'fbmi'},
-    {name:'fel'},
-    {name:'faks'}
-    ],
-    photo1 : [
-    {name: "mister1_1.png"},
-    {name: "mister1_1.png"},
-    {name: "mister1_1.png"}
-    ],
-    photo2 : [
-    {name: "mister1_2.png"},
-    {name: "mister1_2.png"},
-    {name: "mister1_2.png"}
-    ],
-    vk : [
-    {name: 'https://vk.com/id18213604'},
-    {name: 'https://vk.com/hitodz'},
-    {name: 'https://vk.com/dan1k_1'}
-    ],
-    fb : [
-    {name: '#'},
-    {name: '#'},
-    {name: '#'}
-    ],
-    inst : [
-    {name: '#'},
-    {name: '#'},
-    {name: '#'}
-    ]
-};
+    var overlay = $(".overlay");
+    var modal = $(".modal");
 
-var content = tmpl(html, data);
+    $(".election").on("click", function() {
+        overlay.addClass('overlay_show');
+        modal.addClass('modal_show');
+    });
 
-$('body').append(content);
+    overlay.on("click", function () {
+        $(this).removeClass('overlay_show');
+        modal.removeClass('modal_show');
+    });
 
-var overlay = $(".overlay");
-var modal = $(".modal");
+    $('.show_line,.menu').click(function(){
+        var hidden = $('.menu');
+        if (hidden.hasClass('visible')){
+            hidden.animate({"top":"-3000px"}, "slow").removeClass('visible');
+        } else {
+            hidden.animate({"top":"0px"}, "slow").addClass('visible');
+        }
+    });
 
-$(".election").on("click", function() {
-    overlay.addClass('overlay_show');
-    modal.addClass('modal_show');
-});
 
-overlay.on("click", function () {
-    $(this).removeClass('overlay_show');
-    modal.removeClass('modal_show');
-});
+    $(document).ready(function(){
+        $(".menu").on("click","a", function (event) {
+        //отменяем стандартную обработку нажатия по ссылке
+        event.preventDefault();
 
-$('.show_line,.menu').click(function(){
-    var hidden = $('.menu');
-    if (hidden.hasClass('visible')){
-        hidden.animate({"top":"-3000px"}, "slow").removeClass('visible');
-    } else {
-        hidden.animate({"top":"0px"}, "slow").addClass('visible');
-    }
-});
+        //забираем идентификатор бока с атрибута href
+        var id  = $(this).attr('href'),
+
+        //узнаем высоту от начала страницы до блока на который ссылается якорь
+        top = $(id).offset().top;
+        
+        //анимируем переход на расстояние - top за 1500 мс
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+    });
+
 
 });
