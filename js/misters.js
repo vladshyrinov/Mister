@@ -41,6 +41,13 @@ $(function(){
       type: 'image'
   // other options
 });
-
+/*
+    $(document).bind( 'wheel', function (e) { 
+        var nt = $(document.body).scrollTop()-(e.originalEvent.wheelDeltaY*3.3); 
+        e.preventDefault(); 
+        $(document.body).stop().animate( { 
+            scrollTop : nt 
+        } , 500); 
+    } );*/
 
 });

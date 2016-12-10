@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +8,11 @@
 	<link rel="stylesheet" href="css/misters.css">
 	<link rel="stylesheet" href="css/popup.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 	<script src="js/popup.js"></script>
 	<script src="js/misters.js"></script>
 </head>
-<body>
+<body id="up">
 	<div class="modal">
 		<p>Оберіть соціальну мережу
 			<br> за допомогою якої ви бажаєте проголосувати</p>
@@ -75,15 +76,37 @@
 		</div>
 		<div id="fel" class="row">
 			<div class="col-sm-6 photo_part">
-				<img src="img/mister1_1.png" alt="mister1_1">
+				<a class="test-popup-link" href="img/perfadd.jpg"><img src="img/perfadd.jpg" alt="mister1_1"></a>
 			</div>
 			<div class="col-sm-6 info_part">
-				<img src="img/mister1_2.png" alt="mister1_2">
-				<h2>Алина, Просто Алина(ФЕЛ)</h2>
+				<a class="test-popup-link" href="img/perfmore.jpg"><img src="img/perf.jpg" alt="mister1_2"></a>
+				<h2>Іван Іванов(ФБМІ)</h2>
+				<h2 class="lower_font">проголосувало: </h2>
 				<div class="vote">
 					<div class="social-networks">
 						<ul>
-							<li><a class="soc-link vk" href="https://vk.com/dan1k_1" target="_blank"></a></li>
+							<li><a class="soc-link vk" href="https://vk.com/id18213604" target="_blank"></a></li>
+							<li><a class="soc-link facebook" href="#" target="_blank"></a></li>
+							<li><a class="soc-link instagram" href="#" target="_blank"></a></li>
+						</ul>
+					</div>
+					<button class="election">голосувати</button>
+				</div>
+				<a class="xiaomi" href="http://www.xiaomi.ua/" target="_blank"><img src="img/xiaomi.png" alt="xiaomi"></a>
+			</div>
+		</div>
+		<div id="ipsa" class="row">
+			<div class="col-sm-6 photo_part">
+				<a class="test-popup-link" href="img/perfadd.jpg"><img src="img/perfadd.jpg" alt="mister1_1"></a>
+			</div>
+			<div class="col-sm-6 info_part">
+				<a class="test-popup-link" href="img/perfmore.jpg"><img src="img/perf.jpg" alt="mister1_2"></a>
+				<h2>Іван Іванов(ФБМІ)</h2>
+				<h2 class="lower_font">проголосувало: </h2>
+				<div class="vote">
+					<div class="social-networks">
+						<ul>
+							<li><a class="soc-link vk" href="https://vk.com/id18213604" target="_blank"></a></li>
 							<li><a class="soc-link facebook" href="#" target="_blank"></a></li>
 							<li><a class="soc-link instagram" href="#" target="_blank"></a></li>
 						</ul>
