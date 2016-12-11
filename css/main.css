@@ -1,10 +1,10 @@
 @font-face {
-    font-family: 'MyriadPro';
-    src: url('../fonts/MyriadPro-Regular.eot');
-    src: url('../fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/MyriadPro-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'MyriadPro';
+	src: url('../fonts/MyriadPro-Regular.eot');
+	src: url('../fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/MyriadPro-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
 }
 
 /* COMMON SETTINGS */
@@ -126,5 +126,12 @@ a:hover {
 	.poster_part,
 	.menu_part {
 		width: 100%;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.poster_part{
+		background: url('../img/poster.jpg') no-repeat;
+		background-size: 100% 100%;
 	}
 }
