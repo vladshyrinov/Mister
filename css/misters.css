@@ -141,7 +141,7 @@ a:hover {
 	position: fixed;
 	top: 0;
 	background: #909090;
-	height: 55px;
+	height: 65px;
 	width: 100%;
 	top: -3000px;
 	z-index: 101;
@@ -601,9 +601,9 @@ button:hover {
 	}
 
 	.netw_elect {
+		position: static;
 		margin: 0;
-		margin-top: 10px;
-		margin-bottom: 10px;
+		margin-left: 10px;
 	}
 
 	@media(max-width: 950px) {
